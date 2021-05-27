@@ -36,4 +36,13 @@ class MyController extends Controller
 
         return redirect() -> route('home');
     }
+
+    public function destroy($id){
+
+        $employee = Employee::findOrFail($id);
+
+        $employee -> delete();
+        
+        return redirect() -> route('home');
+    }
 }

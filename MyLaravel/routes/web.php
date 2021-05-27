@@ -17,3 +17,5 @@ Route::get('/', 'MyController@home')->name('home');
 
 Route::get('/edit/{id}', 'MyController@edit')->name('edit');
 Route::post('update/{id}', 'MyController@update')->name('update');
+
+Route::get('/destroy/{id}', 'MyController@destroy')->name('destroy');

@@ -65,6 +65,18 @@ body {
 
                     margin-bottom: 0;
                 }
+
+                .fas {
+
+                    color: chocolate;
+                    
+                    &.fa-times:last-child {
+                        
+                        margin-left: .2em;
+                        font-size: 20px;
+                    }
+                }
+                
             }
         }
 

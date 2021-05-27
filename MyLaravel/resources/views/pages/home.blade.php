@@ -16,7 +16,7 @@
                         <a href="{{ route('edit', $employee -> id) }}">
                             <i class="fas fa-pen"></i>
                         </a>
-                        <a href="">
+                        <a href="{{ route('destroy', $employee -> id) }}">
                             <i class="fas fa-times"></i>
                         </a>
                     </div>
