@@ -14,3 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'MyController@home')->name('home');
+
+Route::get('/edit/{id}', 'MyController@edit')->name('edit');
+Route::post('update/{id}', 'MyController@update')->name('update');

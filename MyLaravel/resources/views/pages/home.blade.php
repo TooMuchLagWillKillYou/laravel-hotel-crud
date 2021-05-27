@@ -3,7 +3,26 @@
 @section('content')
     
     <main>
-        <h2>Main</h2>
+        <ul>
+            @foreach ($employees as $employee)
+                <li>
+                    <div class="employee">
+                        {{ $employee -> id }}
+                        {{ $employee -> firstname }}
+                        {{ $employee -> lastname }}
+                    </div>
+
+                    <div class="opt">
+                        <a href="{{ route('edit', $employee -> id) }}">
+                            <i class="fas fa-pen"></i>
+                        </a>
+                        <a href="">
+                            <i class="fas fa-times"></i>
+                        </a>
+                    </div>
+                </li>
+            @endforeach
+        </ul>
     </main>
 
 @endsection

@@ -1,1 +1,98 @@
-//
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+@mixin vertical-padding {
+    
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+body {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: cadetblue;
+    background-color: azure;
+
+    header,
+    footer {
+
+        @include vertical-padding;
+    }
+
+    a {
+
+        text-decoration: none;
+        color: inherit;
+    }
+
+    button {
+        
+        padding: 1em 1.2em;
+        cursor: pointer;
+
+        font-weight: 600;
+        color: chocolate;
+        border: .5px solid chocolate;
+        border-radius: 10px;
+        background-color: transparent;
+    }
+
+    .center {
+
+        padding-left: 15%;
+        padding-right: 15%;
+
+        ul {
+
+            list-style: none;
+
+            li {
+
+                display: flex;
+                justify-content: space-between;
+                width: 250px;
+
+                margin-bottom: 1em;
+                padding-bottom: .5em;
+                border-bottom: .5px solid cadetblue;
+
+                &:last-child {
+
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        form {
+
+            .form-input {
+
+                margin-bottom: 1em;
+                
+                &:last-child {
+
+                    margin-bottom: 0;
+                }
+
+                label {
+                    
+                    display: block;
+                    margin-bottom: .3em;
+                }
+
+                input {
+
+                    padding: 1em 1.2em;
+                    border: .5px solid cadetblue;
+                    border-radius: 10px;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}

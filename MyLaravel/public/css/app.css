@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: cadetblue;
+  background-color: azure;
+}
+
+body header,
+body footer {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+body a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body button {
+  padding: 1em 1.2em;
+  cursor: pointer;
+  font-weight: 600;
+  color: chocolate;
+  border: 0.5px solid chocolate;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+body .center {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+body .center ul {
+  list-style: none;
+}
+
+body .center ul li {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  margin-bottom: 1em;
+  padding-bottom: 0.5em;
+  border-bottom: 0.5px solid cadetblue;
+}
+
+body .center ul li:last-child {
+  margin-bottom: 0;
+}
+
+body .center form .form-input {
+  margin-bottom: 1em;
+}
+
+body .center form .form-input:last-child {
+  margin-bottom: 0;
+}
+
+body .center form .form-input label {
+  display: block;
+  margin-bottom: 0.3em;
+}
+
+body .center form .form-input input {
+  padding: 1em 1.2em;
+  border: 0.5px solid cadetblue;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
